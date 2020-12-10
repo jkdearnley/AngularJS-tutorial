@@ -8,4 +8,10 @@ myCheeseApp.run(function(){
 
 });
 
-myCheeseApp.controller
+myCheeseApp.controller('CheeseController', function($scope){
+
+    $scope.message= "Hey y'all";
+
+    $scope.cheeses = ['Brie', 'Camembert', 'Parmesan', 'Cheddar', 'Mozzarella'];
+
+});
