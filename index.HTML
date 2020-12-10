@@ -1,14 +1,20 @@
 <!DOCTYPE html>
-<html lang="=en" ng-app>
+    <!-- ng-app -> AngularJS is active --directive-- -->
+<html lang="=en" ng-app> 
     <head>
-         <title>AngularJS Tutorial</title>
+         <title>AngularJS Tutorial</title> 
          <link href="content/css/styles.css" rel="stylesheet" type="text/css" />
          <script src="app\angular.min.js"></script>
     </head>
 
     <body>
+        <!-- 2-way data binding example -->
         <input type="text" ng-model="favCheese" placeholder="Enter your favourite cheese" />
         <p>Your favourite cheese is: {{favCheese}}</p>
+
+        <!-- Expression -->
+        <p>{{5*5}}</p>
+
     </body>
 
 </html>
