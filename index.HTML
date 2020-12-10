@@ -7,13 +7,26 @@
          <script src="app\angular.min.js"></script>
     </head>
 
-    <body>
+    <!-- <body ng-init="numbers=[1,2,3,4]"> -->
+    <body ng-init="cheeses=['Brie', 'camembert', 'parmesan', 'cheddar', 'mozzarella']">
+        <!-- <body ng-init="color='red'"> -->
         <!-- 2-way data binding example -->
         <input type="text" ng-model="favCheese" placeholder="Enter your favourite cheese" />
         <p>Your favourite cheese is: {{favCheese}}</p>
 
-        <!-- Expression -->
+        <!-- Expressions -->
         <p>{{5*5}}</p>
+        <p>{{numbers[0] + numbers[3]}}</p>
+        <p class=>You like {{cheeses[0]}}, but you also like {{cheeses[1]}}, {{cheeses[2]}}, {{cheeses[3]}} and {{cheeses[4]}}!</p>
+        <p class="{{color}}">HELLOOOOOOO</p>
+        <li>{{cheeses[0]}}</li>
+        <li>{{cheeses[1]}}</li>
+        <li>{{cheeses[2]}}</li>
+        <li>{{cheeses[3]}}</li>
+        <li>{{cheeses[4]}}</li>
+<br>
+        <li ng-repeat="cheese in cheeses">{{cheese}}</li>
+        
 
     </body>
 
