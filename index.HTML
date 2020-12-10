@@ -11,8 +11,11 @@
     <body>
         <div ng-controller="CheeseController">
             <p>{{message}}</p>
+            <input type="text" ng-model="search" />
             <ul>
-                <li ng-repeat="cheese in cheeses">{{cheese}}</li>
+                <li ng-repeat="cheese in cheeses | orderBy: 'name' | filter: search">
+                    {{cheese.name}} - {{cheese.taste}} - {{cheese.price | currency}}
+                </li>
             </ul>
         </div>
     </body>
